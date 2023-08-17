@@ -3,6 +3,8 @@ import { AppModule } from './app.module';
 import { DocumentBuilder } from '@nestjs/swagger';
 import { SwaggerModule } from '@nestjs/swagger/dist';
 import { CorsOptions } from '@nestjs/common/interfaces/external/cors-options.interface';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -28,6 +30,6 @@ async function bootstrap() {
   };
   app.enableCors(corsOptions);
 
-  await app.listen(3001);
+  await app.listen(process.env.PORT || 3001);
 }
 bootstrap();
