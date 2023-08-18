@@ -3,7 +3,7 @@
   "env": {
     "JWT_SECRET": "topsecret",
     "DB_HOST": "dpg-ci42t6aip7vptq54ba60-a.oregon-postgres.render.com",
-    "DB_PORT": 5432,
+    "DB_PORT": "5432",
     "DB_USERNAME": "amconuser",
     "DB_PASSWORD": "yUVKC01wDI6Mv4FbnhIirwfvjjTafMAJ",
     "DB_NAME": "isoftdb"
